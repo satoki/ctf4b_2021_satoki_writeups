@@ -3,7 +3,7 @@
 
 ## はじめに
 SECCON Beginners CTF 2021 作問者の一人[Satoki](https://twitter.com/satoki00)と言います。  
-私が作問した問題は以下になります。  
+私が作った問題は以下になります。  
 
 - Easter egg
   - [width_of_space](misc/width_of_space)  

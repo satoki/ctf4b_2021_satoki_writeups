@@ -29,7 +29,7 @@ if(stripos($url,"localhost") !== false || stripos($url,"apache") !== false){
 `127.0.0.1`にはドットが含まれている。  
 `localhost`ならばアルファベットのみだがこれも許可されていない。  
 `localhost`の別の記述方法を探すと`2130706433`や`0x7F000001`や`017700000001`と表せる([参考](https://qiita.com/naka_kyon/items/88478be20b300e757fc0))。  
-curl_execでは使用できないパターンもあるが、無事`https://check-url.quals.beginners.seccon.jp/?url=http://0x7F000001`でフラグが得られる。  
+curl_execでは使用できないパターンもあるが、`https://check-url.quals.beginners.seccon.jp/?url=http://0x7F000001`でフラグが得られる。  
 ![images/0.png](images/0.png)  
 
 ## ctf4b{5555rf_15_53rv3r_51d3_5up3r_54n171z3d_r3qu357_f0r63ry}

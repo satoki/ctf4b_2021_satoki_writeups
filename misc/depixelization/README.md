@@ -15,7 +15,7 @@ Can you depixelize it ?
 
 ## 解法
 output.pngとpixelization.pyが配られる。  
-![solver/output.png](output.png)  
+![solver/output.png](solver/output.png)  
 pixelization.pyでは、フラグの文字と文字P、I、Xを重ねて縮小することでモザイク加工を行っている。  
 文字P、I、Xを除去することを考えるが、情報量が落ちているため難しそうだ。  
 復元ができなくともモザイク加工した先で一致を見てやればよいことに気づく。  

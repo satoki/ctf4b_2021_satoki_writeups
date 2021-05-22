@@ -4,7 +4,7 @@
 writeme.  
 (A little pwn)  
 `nc writeme.quals.beginners.seccon.jp 27182`  
-[writeme.tar.gz](files/) 6fed82490d18ce779247e47a6d89efb2e52e753c  
+[writeme.tar.gz](files/writeme.tar.gz) 6fed82490d18ce779247e47a6d89efb2e52e753c  
 
 ## 難易度
 **Medium**  
