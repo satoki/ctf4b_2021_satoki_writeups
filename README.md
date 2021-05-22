@@ -3,16 +3,18 @@
 
 ## はじめに
 SECCON Beginners CTF 2021 作問者の一人[Satoki](https://twitter.com/satoki00)と言います。  
-私が作った問題は以下になります。  
+鍵垢ですがフォローしていろいろなことに誘っていただけると嬉しいです。  
+2021で私が作った問題は以下になります。  
 
 - Easter egg
-  - [width_of_space](misc/width_of_space)  
+  - [width_of_space](misc/width_of_space) [? Solves]  
 - Misc
-  - [depixelization](misc/depixelization)  
-  - [fly](misc/fly)  
-  - [writeme](misc/writeme)  
+  - [depixelization](misc/depixelization) [X Solves]  
+  - [fly](misc/fly) [X Solves]  
+  - [writeme](misc/writeme) [X Solves]  
 - Web
-  - [cant_use_db](web/cant_use_db)  
-  - [check_url](web/check_url)  
+  - [cant_use_db](web/cant_use_db) [X Solves]  
+  - [check_url](web/check_url) [X Solves]  
 
+全体として意図したとおりのSolvesになったと感じています。  
 この度はご参加頂き有り難うございました。  
