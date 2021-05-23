@@ -15,9 +15,11 @@ curlは`$ curl "ｗｗｗ。ｇｏｏｇｌｅ。ｃｏｍ"`もOKなので全角
 File URI Schemeでのディレクトリトラバーサルのラビットホールを置いとこうとも思いましたがEasyなので最終的に止めました。  
 
 ## 解法
+curlがお試しできるサイトのようだ。  
+![images/0.png](images/0.png)  
 ソースコードが配られる。  
 `$_SERVER["REMOTE_ADDR"] === "127.0.0.1"`にてローカルからのアクセスではAdminだと判断されるが、Trueにはならない。  
-curlを実行できるようなのでSSRFでフラグを読みだせばよいとすぐにわかる。  
+curl_execを実行できるのでSSRFでフラグを読みだせばよいとすぐにわかる。  
 しかし、スーパーサニタイズによってアルファベットと数字以外弾かれる。  
 ```php
 if ($url !== "https://www.example.com"){
@@ -31,6 +33,6 @@ if(stripos($url,"localhost") !== false || stripos($url,"apache") !== false){
 `localhost`ならばアルファベットのみだがこれも許可されていない。  
 `localhost`の別の記述方法を探すと`2130706433`や`0x7F000001`や`017700000001`と表せる([参考](https://qiita.com/naka_kyon/items/88478be20b300e757fc0))。  
 curl_execでは使用できないパターンもあるが、`https://check-url.quals.beginners.seccon.jp/?url=http://0x7F000001`でフラグが得られる。  
-![images/0.png](images/0.png)  
+![images/1.png](images/1.png)  
 
 ## ctf4b{5555rf_15_53rv3r_51d3_5up3r_54n171z3d_r3qu357_f0r63ry}

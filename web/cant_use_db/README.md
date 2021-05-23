@@ -18,6 +18,8 @@ I have so little money that I can't even buy the ingredients for ramen.
 コードがクソだと感じたあなたは正常です。  
 
 ## 解法
+ラーメンサイトが表示される。  
+![images/0.png](images/0.png)  
 ソースを見ると、ユーザ情報はファイル管理のようだ。  
 所持金以上のものを買うサイトから見てもrace conditionを狙う。  
 購入処理で`/buy_noodles`、`/buy_soup`へPOSTを投げているようだ。  
